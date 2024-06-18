@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --medium: 100px;
+  --short: 50px;
+  --extraLarge: 500px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 93.5vh;
+  background-color: #f4e4ba;
+}
+
+.container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-height: 45vh;
+  /* width: 50vh; */
+}
+.container h2 {
+  text-align: center;
+}
+
+.container:hover {
+  box-shadow: 2px 2px 50px #af4d98;
+}
+
+@media screen {
+  .container {
+    width: 30vw;
+  }
+}
+
+form {
+  margin: 2rem 0 2rem 0;
+}
+
+form select,
+button,
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.75rem;
+}
+
+form input {
+  border: 1px solid lightgray;
+  font-size: 1rem;
+  height: 3rem;
+  padding-left: 0.5rem;
+}
+
+form input:focus {
+  box-shadow: 1px 1px 10px #af4d98;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.dropdown i {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.select-container img {
+  max-width: 2rem;
+}
+
+.select-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 1px solid lightgray;
+  width: 6rem;
+}
+
+.select-container:hover {
+  box-shadow: 1px 1px 10px #af4d98;
+}
+
+.select-container select {
+  font-size: 0.8rem;
+  width: auto;
+}
+
+.msg {
+  margin: 2rem 0 2rem 0;
+}
+
+form button {
+  height: 3rem;
+  background-color: #af4d98;
+  color: white;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+form button:active {
+  box-shadow: 1px 1px 5px black;
+}
+
+.footer {
+  background-color: #f4e4ba;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px; /* Adjust as needed */
+}
